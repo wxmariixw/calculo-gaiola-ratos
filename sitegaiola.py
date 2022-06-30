@@ -12,4 +12,8 @@ def index():
 
         quantidaderatos = (altura * largura * profundidade) / 70792
         
-        return f'<p>Cabem {quantidaderatos:.0f} ratinhos</p>'
+        resultado = f'Cabem {quantidaderatos:.0f} ratinhos'
+        
+        return render_template("resultado.html", resultado=resultado)
+        
+        
