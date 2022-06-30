@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quantos ratinhos cabem na sua gaiola?</h1>
+    <form action="{{url_for('index')}}" method="post">
+        <label>Largura</label>
+        <input type="number" name="largura">
+        
+        <label>Altura</label>
+        <input type="number" name="altura">
+
+        <label>Profundidade</label>
+        <input type="number" name="profundidade">
+
+        <button>Calcular!</button>
+    </form>
+</body>
+</html>
